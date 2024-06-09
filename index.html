@@ -1,501 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Nature</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h3 class="logo">Brand<span>Name</span></h3>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+        <h1 class="big-title translate" data-speed="0.1">Discover.</h1>
 
-body{
-    font-family: 'Poppins', sans-serif;
-}
+        <img src="img/person.png" class="person translate" data-speed="-0.25" alt="">
+        <img src="img/mountain1.png" class="mountain1 translate" data-speed="-0.2" alt="">
+        <img src="img/mountain2.png" class="mountain2 translate" data-speed="0.4" alt="">
+        <img src="img/mountain3.png" class="mountain3 translate" data-speed="0.3" alt="">
+        <img src="img/sky.png" class="sky translate" data-speed="0.5" alt="">
+    </header>
 
-.container{
-    max-width: 70rem;
-    padding: 0 2rem;
-    margin: 0 auto;
-}
-
-header{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
-header:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.05);
-    z-index: 25;
-}
-
-.mountain1{
-    position: absolute;
-    bottom: -100px;
-    width: 1500px;
-    right: 0;
-    z-index: 19;
-}
-
-.person{
-    position: absolute;
-    width: 650px;
-    bottom: -100px;
-    left: -70px;
-    z-index: 20;
-}
-
-.mountain2{
-    position: absolute;
-    width: 1100px;
-    bottom: -100px;
-    left: 0;
-    z-index: 18;
-}
-
-.mountain3{
-    position: absolute;
-    width: 900px;
-    bottom: 150px;
-    right: 0;
-    z-index: 17;
-}
-
-.sky{
-    position: absolute;
-    width: 2100px;
-    bottom: 250px;
-    right: 0;
-}
-
-nav{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 0;
-    z-index: 30;
-    background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), transparent)
-}
-
-nav .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    color: #fff;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-
-.logo span{
-    font-weight: 300;
-}
-
-.hamburger-menu{
-    width: 1.55rem;
-    height: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.bar{
-    position: relative;
-    width: 1.2rem; 
-    height: 3px;
-    background-color: #fff;
-    border-radius: 2px;
-}
-
-.bar:before, .bar:after{
-    content: '';
-    position: absolute;
-    width: 1.55rem;
-    height: 3px;
-    right: 0;
-    background-color: #fff;
-    border-radius: 2px;
-}
-
-.bar:before{
-    transform: translateY(-8px);
-}
-
-.bar:after{
-    transform: translateY(8px);
-}
-
-.big-title{
-    position: absolute;
-    z-index: 30;
-    line-height: 4rem;
-    top: calc(50% - 2rem);
-    width: 100%;
-    text-align: center;
-    font-size: 5rem;
-    font-weight: 600;
-    color: #fff;
-}
-
-section {
-    width: 100%;
-    position: relative;
-    padding: 3rem 0;
-    background-color: #151515;
-}
-
-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-section img {
-    width: 100%;
-    display: block;
-}
+    <section>
+        <div class="shadow"></div>
+        <div class="container">
+            <div class="content opacity">
+                <h3 class="title">
+                    About
+                    <div class="border"></div>
+                </h3>
+                <p class="text">Bali, Endonezya'nın en büyüleyici adalarından biridir. Turkuaz sularıyla çevrili, beyaz kumlu plajları, sakin tapınakları ve nefes kesen doğal güzellikleriyle tanınır. Bali, sadece doğasıyla değil, aynı zamanda zengin kültürel mirasıyla da bilinir. Geleneksel dansları, el sanatları ve dini ritüelleriyle adeta bir kültür hazinesi sunar. Bali'ye yapılan bir ziyaret, ruhu dinlendiren bir kaçışın yanı sıra, kendinizi farklı bir dünyada, mistik bir atmosferde bulma fırsatı sunar.</p>
+            </div>
+            <div class="imgContainer opacity">
+                <img src="img/ada.png" alt="">
+            </div>
+        </div>
 
 
-section .container > *{
-    margin: 2rem;
-}
-
-.content{
-    color: #fff;
-    transform: translateY(-50px);
-}
-
-.imgContainer{
-    transform: translateY(50px);
-}
-
-.title{
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: .5rem;
-    position: relative;
-}
-
-.border{
-    position: absolute;
-    width: 0%;
-    height: 3px;
-    background-color: #fff;
-    bottom: 0;
-    left: 0;
-}
-
-.shadow{
-    position: absolute;
-    bottom: 100%;
-    height: 300px;
-    width: 100%;
-    left: 0;
-    z-index: 20;
-    background: linear-gradient(to top, #151515, transparent);
-}
-
-.opacity{
-    opacity: 0;
-}
-
-@media (max-width: 850px){
-    section .container{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media(max-width: 600px){
-    .big-title{
-        font-size: 3rem
-    }
-
-    .text{
-        font-size: .8rem;
-    }
-
-    .title{
-        font-size: 1.2rem;
-    }
-}
+    </section>
 
 
 
 
+        <!-- Swiper Section -->
+        <section class="collection">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="content swiper-slide">
+                <div class="content swiper-slide">
+                  <img class="background-image" src="img/p/p14.jpeg" alt="">
+                </div>
+                <img class="background-image" src="img/p/p16.jpeg" alt="">
+              </div>
+              <div class="content swiper-slide">
+                <img class="background-image" src="img/p/Image5.jpg" alt="">
+              </div>
+              <div class="content swiper-slide">
+                <img class="background-image" src="img/p/p7.jpeg" alt="">
+              </div>
+              
+              <div class="content swiper-slide">
+                <img class="background-image" src="img/p/p12.jpeg" alt="">
+              </div>
+              
+              <div class="content swiper-slide">
+                <img class="background-image" src="img/p/p15.jpeg" alt="">
+              </div>
 
 
+              <div class="content swiper-slide">
+                <img class="background-image" src="img/p/p16.jpeg" alt="">
+              </div> <div class="content swiper-slide">
 
 
+                <img class="background-image" src="img/p/p9.jpeg" alt="">
+              </div> <div class="content swiper-slide">
+                <img class="background-image" src="img/p/p13.jpeg" alt="">
+              
+            </div>
+          </div>
+        </section>
+        
 
 
+    <section class="testimonials">
+      <div class="container">
+          <h2 class="section-title">Testimonials</h2>
+          <div class="testimonial">
+              <img src="img/d/a9.jpg" alt="Testimonial Avatar">
+              <p class="testimonial-text">“Bali is a paradise which sends even a thrill to the most hardened travellers.” </p>
+              <p class="testimonial-author">– Roman Skaskiw</p>
+          </div>
+          <div class="testimonial">
+              <img src="img/d/a10.jpg" alt="Testimonial Avatar">
+              <p class="testimonial-text">“Dance and sing, laugh and pray, but let your life reflect the peace within.” </p>
+              <p class="testimonial-author">– Wayan Suweca</p>
+          </div>
+      </div>
+  </section>
 
-
-
-.collection{
-    height: 100vh;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .collection .content{
-    height: 28rem;
-    width: 25rem;
-    background-color: #1b1f2a;
-    border: .2rem solid rgba(255,255,255,.1);
-    border-radius: .7rem;
-    border-bottom: .4rem solid #000000;
-    border-top: .4rem solid #000000;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent , #0002 , #0004);
-
-
-  }
-  
-  .content .background-image{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    
-  }
   
 
+ <!-- Parallax Section -->
+ <section class="parallax"></section>
 
+ <section class="parallax second"></section>
 
 
 
 
 
 
+ <section class="contact_Me">
+  <div class="container_contactMe">
+        <form>
+            <h1>Contact Us Form</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <h4>Type Your Message Here...</h4>
+            <textarea required></textarea>
+            <input type="submit" value="Send" id="button">
+        </form>
+    </div>
+</section>
 
 
 
 
 
-
-
-
-
-.parallax {
-    background-image: url('img/Deneme3.png');
-    height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-.parallax.second {
-    background-image: url('img/Deneme4.png');
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Testimonial Section */
-.testimonials {
-    background-color: #ffffff;
-
-    padding: 50px 0;
-}
-
-.testimonials .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.testimonial {
-    max-width: 300px;
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.testimonial-text {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.testimonial-author {
-    font-style: italic;
-    color: #999;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container_contactMe{
-    min-height: 100vh;
-    background: #08071d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("img/d/a5.jpg") no-repeat center center/cover;
-}
-
-.container_contactMe form{
-    width: 670px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius: 15px;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    flex-wrap: wrap;
-}
-
-.container_contactMe form h1{
-    color: #fff;
-    font-weight: 500;
-    margin-top: 20px;
-    width: 500px;
-    text-align: center;
-}
-
-.container_contactMe form input{
-    width: 290px;
-    height: 40px;
-    padding-left: 10px;
-    outline: none;
-    border: none;
-    font-size: 15px;
-    margin-bottom: 10px;
-    background: none;
-    border-bottom: 2px solid #fff;
-}
-
-.container_contactMe form input::placeholder{
-    color: #ddd;
-}
-
-.container_contactMe form #lastName,
-.container_contactMe form #mobile{
-    margin-left: 20px;
-}
-
-.container_contactMe form h4{
-    color: #fff;
-    font-weight: 300;
-    width: 600px;
-    margin-top: 20px;
-}
-
-.container_contactMe form textarea{
-    background: none;
-    border: none;
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    font-weight: 200;
-    font-size: 15px;
-    padding: 10px;
-    outline: none;
-    min-width: 600px;
-    max-width: 600px;
-    min-height: 80px;
-    max-height: 80px;
-}
-
-textarea::-webkit-scrollbar{
-    width: 1em;
-}
-
-textarea::-webkit-scrollbar-thumb{
-    background-color: rgba(194,194,194,0.713);
-}
-
-.container_contactMe form #button{
-    border: none;
-    background: #fff;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #333;
-    width: 100px;
-    padding: 0;
-    margin-right: 500px;
-    margin-bottom: 30px;
-    transition: 0.3s;
-}
-
-.container_contactMe form #button:hover{
-    opacity: 0.7;
-}
-
-
-
-footer {
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1rem;
-}
-
+
+
+  <footer>
+      <div class="container2">
+          <p>&copy; 2024 Merve Altınışık. All rights reserved.</p>
+      </div>
+  </footer>
+
+
+
+
+
+
+    <script>
+        const translate = document.querySelectorAll(".translate");
+        const big_title = document.querySelector(".big-title");
+        const header = document.querySelector("header");
+        const shadow = document.querySelector(".shadow");
+        const content = document.querySelector(".content");
+        const section = document.querySelector("section");
+        const image_container = document.querySelector(".imgContainer");
+        const opacity = document.querySelectorAll(".opacity");
+        const border = document.querySelector(".border");
+
+        let header_height = header.offsetHeight;
+        let section_height = section.offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            let scroll = window.pageYOffset;
+            let sectionY = section.getBoundingClientRect();
+
+            translate.forEach(element => {
+                let speed = element.dataset.speed;
+                element.style.transform = `translateY(${scroll * speed}px)`;
+            });
+
+            opacity.forEach(element => {
+                element.style.opacity = scroll / (sectionY.top + section_height);
+            })
+
+            big_title.style.opacity = - scroll / (header_height / 2) + 1;
+            shadow.style.height = `${scroll * 0.5 + 300}px`;
+
+            content.style.transform = `translateY(${scroll / (section_height + sectionY.top) * 50 - 50}px)`;
+            image_container.style.transform = `translateY(${scroll / (section_height + sectionY.top) * -50 + 50}px)`;
+
+            border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
+        })
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 15,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+        });
+    </script>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    loop:true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 150,
+      modifier: 2.5,
+      slideShadows: true,
+    },
+    autoplay:{
+  
+      delay:3000,
+      disableOnInteraction:false,
+    }
+  
+  });
+</script>
+    
+</body>
+</html>

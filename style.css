@@ -248,32 +248,52 @@ section .container > *{
 
 
 
-
-
-
+.collection {
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-left: 0.05rem; 
+    align-items: center;
+}
 
 .swiper {
-    width: 80%;
-    height: 10%;
-    z-index: 35;
-    margin-bottom: 260px;
-  }
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    height: 32rem; /* Yükseklik ayarı */
 
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 250px;
-    z-index: 35;
-  }
+}
+  .collection .content{
+    height: 28rem;
+    width: 25rem;
+    background-color: #1b1f2a;
+    border: .2rem solid rgba(255,255,255,.1);
+    border-radius: .7rem;
+    border-bottom: .4rem solid #000000;
+    border-top: .4rem solid #000000;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent , #0002 , #0004);
 
-  .swiper-slide img {
-    display: block;
+
+  }
+  
+  .content .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent , #0002 , #0004);
-    z-index: 35;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
   }
-
-
+  
 
 
 
@@ -292,7 +312,7 @@ section .container > *{
 
 
 .parallax {
-    background-image: url('img/Deneme3.png');
+    background-image: url('img/b9.png');
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
@@ -373,6 +393,13 @@ section .container > *{
 
 
 
+.contact_Me {
+    position: relative;
+    background: #fff;
+
+}
+
+ 
 
 
 
@@ -382,7 +409,9 @@ section .container > *{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("img/d/a5.jpg") no-repeat center center/cover;
+    background: url("img/b7.png") no-repeat center center/cover;
+    background-position: calc(100% + 290px) calc(100% + 80px);
+
 }
 
 .container_contactMe form{
