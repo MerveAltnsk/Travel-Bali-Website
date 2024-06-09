@@ -148,24 +148,30 @@ nav .container{
     color: #fff;
 }
 
-section{
+section {
     width: 100%;
-    background-color: #151515;
     position: relative;
+    padding: 3rem 0;
+    background-color: #151515;
 }
 
-section .container{
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 3rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
 
-section img{
+section img {
     width: 100%;
+    display: block;
 }
+
 
 section .container > *{
     margin: 2rem;
@@ -265,3 +271,115 @@ section .container > *{
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent , #0002 , #0004);
     z-index: 35;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.parallax {
+    background-image: url('img/Deneme3.png');
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.parallax.second {
+    background-image: url('img/Deneme4.png');
+}
+
+
+.destination p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.contact {
+    background-color: #151515;
+    padding: 3rem 0;
+    color: #fff;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4757;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e84118;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+
+
+
+
