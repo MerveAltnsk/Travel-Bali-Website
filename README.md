@@ -1,0 +1,5 @@
+![Main](https://github.com/MerveAltnsk/Simple-To-do-Project/assets/53054140/599bed86-934b-413a-b6f6-3917425fd1df)
+![main2](https://github.com/MerveAltnsk/Simple-To-do-Project/assets/53054140/4b0dece8-4c7b-45dd-976e-fb2a883d6fe0)
+![main6](https://github.com/MerveAltnsk/Simple-To-do-Project/assets/53054140/28253d2a-d7e3-4769-98a2-1633829b3bd4)
+![main5](https://github.com/MerveAltnsk/Simple-To-do-Project/assets/53054140/bba83f68-d263-4578-ad23-3934a57044bd)
+![main3](https://github.com/MerveAltnsk/Simple-To-do-Project/assets/53054140/d98ab932-44e7-430a-8afe-b59b1b06e75d)
