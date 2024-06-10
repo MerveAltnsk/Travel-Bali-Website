@@ -13,20 +13,20 @@
     <header>
         <nav>
             <div class="container">
-                <h3 class="logo">Brand<span>Name</span></h3>
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
-                </div>
+                <h3 class="logo">Discover</span></h3>
+               
             </div>
         </nav>
 
-        <h1 class="big-title translate" data-speed="0.1">Discover.</h1>
+        <h1 class="big-title translate" data-speed="0.1">Bali.</h1>
 
-        <img src="img/person.png" class="person translate" data-speed="-0.25" alt="">
-        <img src="img/mountain1.png" class="mountain1 translate" data-speed="-0.2" alt="">
-        <img src="img/mountain2.png" class="mountain2 translate" data-speed="0.4" alt="">
-        <img src="img/mountain3.png" class="mountain3 translate" data-speed="0.3" alt="">
-        <img src="img/sky.png" class="sky translate" data-speed="0.5" alt="">
+        <img src="img/w/w1.png" class="person translate" data-speed="-0.25" alt="">
+        <img src="img/w/w13.png" class="mountain1 translate" data-speed="-0.2" alt="">
+        <img src="img/w/w12.png" class="mountain2 translate" data-speed="0.4" alt="">
+        <img src="img/w/w4.png" class="mountain3 translate" data-speed="0.3" alt="">
+        <img src="img/w/w15.png" class="sky translate" data-speed="0.5" alt="">
+        <a href="http://www.freepik.com">Designed by Freepik</a>
+
     </header>
 
     <section>
@@ -37,19 +37,14 @@
                     About
                     <div class="border"></div>
                 </h3>
-                <p class="text">Bali, Endonezya'nın en büyüleyici adalarından biridir. Turkuaz sularıyla çevrili, beyaz kumlu plajları, sakin tapınakları ve nefes kesen doğal güzellikleriyle tanınır. Bali, sadece doğasıyla değil, aynı zamanda zengin kültürel mirasıyla da bilinir. Geleneksel dansları, el sanatları ve dini ritüelleriyle adeta bir kültür hazinesi sunar. Bali'ye yapılan bir ziyaret, ruhu dinlendiren bir kaçışın yanı sıra, kendinizi farklı bir dünyada, mistik bir atmosferde bulma fırsatı sunar.</p>
+                <p class="text">Bali is one of Indonesia's most fascinating islands. Surrounded by turquoise waters, it is known for its white sandy beaches, tranquil temples and breathtaking natural beauty. Bali is known not only for its nature, but also for its rich cultural heritage. Traditional dances, handicrafts and religious rituals offer a treasure trove of culture. A visit to Bali offers a soul-soothing escape, as well as the opportunity to find yourself in a different world, in a mystical atmosphere.
+                </p>
             </div>
             <div class="imgContainer opacity">
                 <img src="img/ada.png" alt="">
             </div>
         </div>
-
-
     </section>
-
-
-
-
         <!-- Swiper Section -->
         <section class="collection">
           <div class="swiper mySwiper">
@@ -65,59 +60,45 @@
               </div>
               <div class="content swiper-slide">
                 <img class="background-image" src="img/p/p7.jpeg" alt="">
-              </div>
-              
+              </div>     
               <div class="content swiper-slide">
                 <img class="background-image" src="img/p/p12.jpeg" alt="">
               </div>
-              
               <div class="content swiper-slide">
                 <img class="background-image" src="img/p/p15.jpeg" alt="">
               </div>
-
-
+              <div class="content swiper-slide">
+                <img class="background-image" src="img/p/p4.jpeg" alt="">
+              </div>
               <div class="content swiper-slide">
                 <img class="background-image" src="img/p/p16.jpeg" alt="">
               </div> <div class="content swiper-slide">
-
-
                 <img class="background-image" src="img/p/p9.jpeg" alt="">
               </div> <div class="content swiper-slide">
                 <img class="background-image" src="img/p/p13.jpeg" alt="">
-              
             </div>
+            
           </div>
         </section>
         
-
-
     <section class="testimonials">
       <div class="container">
-          <h2 class="section-title">Testimonials</h2>
           <div class="testimonial">
-              <img src="img/d/a9.jpg" alt="Testimonial Avatar">
+              <img src="img/a9.jpg" alt="Testimonial Avatar">
               <p class="testimonial-text">“Bali is a paradise which sends even a thrill to the most hardened travellers.” </p>
               <p class="testimonial-author">– Roman Skaskiw</p>
           </div>
           <div class="testimonial">
-              <img src="img/d/a10.jpg" alt="Testimonial Avatar">
+              <img src="img/a10.jpg" alt="Testimonial Avatar">
               <p class="testimonial-text">“Dance and sing, laugh and pray, but let your life reflect the peace within.” </p>
               <p class="testimonial-author">– Wayan Suweca</p>
           </div>
       </div>
   </section>
 
-  
-
  <!-- Parallax Section -->
  <section class="parallax"></section>
-
  <section class="parallax second"></section>
-
-
-
-
-
 
  <section class="contact_Me">
   <div class="container_contactMe">
@@ -134,22 +115,19 @@
     </div>
 </section>
 
+<div class="cursor"></div>
+<div class="cursor2"></div>
 
-
-
-
-
+<button id="scrollToTopBtn" onclick="scrollToTop()">
+  <img src="img/u3.png" alt="Scroll to Top">
+     <!--  <a href="https://www.flaticon.com/free-icons/up-arrow" title="up arrow icons">Up arrow icons created by Evan Gerard K - Flaticon</a> -->
+</button>
 
   <footer>
       <div class="container2">
           <p>&copy; 2024 Merve Altınışık. All rights reserved.</p>
       </div>
   </footer>
-
-
-
-
-
 
     <script>
         const translate = document.querySelectorAll(".translate");
@@ -173,19 +151,26 @@
                 let speed = element.dataset.speed;
                 element.style.transform = `translateY(${scroll * speed}px)`;
             });
-
             opacity.forEach(element => {
                 element.style.opacity = scroll / (sectionY.top + section_height);
             })
-
             big_title.style.opacity = - scroll / (header_height / 2) + 1;
             shadow.style.height = `${scroll * 0.5 + 300}px`;
-
             content.style.transform = `translateY(${scroll / (section_height + sectionY.top) * 50 - 50}px)`;
             image_container.style.transform = `translateY(${scroll / (section_height + sectionY.top) * -50 + 50}px)`;
-
             border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
         })
+
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        
+        document.addEventListener("mousemove", function(e) {
+            var styleString = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+            cursor.style.cssText = styleString;
+            cursor2.style.cssText = styleString;
+        });
+        
+
     </script>
 
     <!-- Swiper JS -->
@@ -209,7 +194,6 @@
         });
     </script>
 
-
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -232,9 +216,27 @@
       delay:3000,
       disableOnInteraction:false,
     }
-  
   });
 </script>
-    
+
+<script>
+  function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  }
+  window.onscroll = function () {
+      scrollFunction();
+  };
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("scrollToTopBtn").style.display = "block";
+      } else {
+          document.getElementById("scrollToTopBtn").style.display = "none";
+      }
+  }
+  </script>
 </body>
 </html>
